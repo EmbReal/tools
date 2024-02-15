@@ -1,0 +1,1 @@
+cppcheck --addon=misra.json --force --inline-suppr --suppress=misra-c2012-2.5:Application/app_config.h --suppress=*:RTE/Device/STM32L475VGTx/STCubeGenerated/Inc/* -IRTE/Device/STM32L475VGTx/STCubeGenerated/Inc -IApplication RTE/Device/STM32L475VGTx/STCubeGenerated/Src/main.c Application

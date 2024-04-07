@@ -2,7 +2,7 @@
 
 # install needed tools
 sudo apt update
-sudo apt install -y cppcheck  cloc
+sudo apt install -y cppcheck  cloc pip
 pip install lizard cpplint
 
 # print out versions

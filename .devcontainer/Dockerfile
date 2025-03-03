@@ -13,7 +13,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
-RUN apt-get upgrade -y && apt-get install -y cloc pip libpcre3 libpcre3-dev cmake git
+RUN apt-get upgrade -y && apt-get install -y cloc pip libpcre3 libpcre3-dev cmake git clang-format
 RUN pip install lizard cpplint
 
 RUN cd /opt && git clone https://github.com/danmar/cppcheck.git /opt/cppcheck && cd /opt/cppcheck && git checkout 2.10.3 && mkdir build && cd build && cmake -DHAVE_RULES=ON .. && cmake --build .

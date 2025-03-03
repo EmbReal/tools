@@ -1,6 +1,26 @@
 {
   "name": "EmbReal Dev Environment",
   "dockerFile": "Dockerfile",
+  "containerUser": "quality",
   "features": {
-  }
+  },
+  "containerEnv" : {
+
+		"SHELL": "/bin/bash"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+                "ms-vscode.cpptools"
+            ],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash"
+					}
+				}
+			}
+		}
+	}
 }

@@ -1,5 +1,6 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "name": "EmbReal Dev Environment",
+  "dockerFile": "Dockerfile",
   "features": {
   }
 }
